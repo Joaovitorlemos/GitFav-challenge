@@ -55,8 +55,8 @@ header {
 }
 
 #logo {
-   width: 18.62rem;
-   height: 3.27rem;
+   min-width: 18.62rem;
+   min-height: 3.27rem;
 }
 
 .search {
@@ -73,7 +73,7 @@ header {
 
    min-width: 40rem;
    max-width: 46.2rem;
-   padding: 1.65rem;
+   padding: 1.5rem;
 }
 
 button {
@@ -97,13 +97,14 @@ button {
    padding: 1.05rem 3.2rem;
 
    cursor: pointer;
+   transition: background .5s;
 }
 
-.button:hover {
+.button-search:hover {
    background: var(--bg-button-hover);
    color: var(--fc-button-hover);
 }
 
-.button:hover svg path{
+.button-search:hover svg path{
    fill: var(--fc-button-hover);
 }
