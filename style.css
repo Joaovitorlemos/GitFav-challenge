@@ -1,0 +1,109 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+
+   --ff-primary: 'Roboto', sans-serif;
+   --fc-primary: white;
+
+   --bg-primary: #000;
+   
+   --bg-input: #06181C;
+   
+   --bg-button-primary: #065E7C;
+   --bg-button-hover: #fff;
+   --fc-button-hover: #065E7C;
+}
+
+body {
+   font-family: var(--ff-primary);
+   font-size: 1.6rem;
+   color: white;
+   
+   background: var(--bg-primary);
+   padding: 11.5rem 2rem
+}
+
+/* Para sumir com o label do input */
+.sr-only {
+   position: absolute;
+   width: .1rem;
+   height: .1rem;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-radius: 0;
+}
+
+#app {
+   max-width: 112rem;
+   width: 100%;
+   margin: 0 auto;
+}
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: .8rem;
+}
+
+#logo {
+   width: 18.62rem;
+   height: 3.27rem;
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: .8rem;
+}
+
+#input-search {
+   background: var(--bg-input);
+   border: none;
+   border-radius: .5rem;
+
+   min-width: 40rem;
+   max-width: 46.2rem;
+   padding: 1.65rem;
+}
+
+button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: .8rem;
+
+   font-family: var(--ff-primary);
+   text-transform: uppercase;
+   color: var(--fc-primary);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 1.4rem;
+   line-height: 2.4rem;
+
+   background: var(--bg-button-primary);
+   border: none;
+   border-radius: .5rem;
+
+   padding: 1.05rem 3.2rem;
+
+   cursor: pointer;
+}
+
+.button:hover {
+   background: var(--bg-button-hover);
+   color: var(--fc-button-hover);
+}
+
+.button:hover svg path{
+   fill: var(--fc-button-hover);
+}
